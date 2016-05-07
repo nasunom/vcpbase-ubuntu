@@ -10,8 +10,7 @@ RUN apt-get update \
     ruby \
     ruby-dev gcc make \
  && echo 'gem: --no-document' >> /etc/gemrc \
- && gem install string-scrub -v 0.0.5 \
- && gem install fluentd -v 0.12.22 \
+ && gem install fluentd -v 0.12.23 \
  && apt-get -y remove make gcc ruby-dev && apt-get -y autoremove
 
 # Docker in Docker <https://hub.docker.com/_/docker/>
